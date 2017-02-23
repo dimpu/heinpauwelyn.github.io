@@ -30,7 +30,6 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
         ReportslistComponent
     ],
     imports: [
-        MarkdownModule,
         BrowserModule,
         FormsModule,
         HttpModule,
@@ -43,7 +42,8 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
             { path: 'portfolio', component: PortfolioComponent },
             { path: 'blog', component: BlogComponent },
             { path: '**', redirectTo: 'home' },
-        ])
+        ]),
+        MarkdownModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]
