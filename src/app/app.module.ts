@@ -43,7 +43,7 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
             { path: 'blog', component: BlogComponent },
             { path: '**', redirectTo: 'home' },
         ]),
-        MarkdownModule.forRoot()
+        MarkdownModule
     ],
     providers: [],
     bootstrap: [AppComponent]
