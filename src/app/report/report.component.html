@@ -1,0 +1,35 @@
+<div class="fixedimage fixedimage--headphone"></div>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="text-center text-white">Internship</h1>
+    <h2 class="text-center text-white">Week {{id}}</h2>
+  </div>
+</div>
+
+<div class="backgroundcolor--white">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Week {{id}}</h2>
+        <markdown [path]="path"></markdown>
+
+        <div class="white-banner"></div>
+        <div class="row">
+          <div class="col-md-4" [style.display]="previousDisplay">
+            <a [routerLink]="previousHref" class="btn btn-default">Previous week</a>
+          </div>
+          <div class="col-md-4 text-center">
+            <a routerLink="/stage" class="btn btn-default">Back to overview</a>
+          </div>
+          <div class="col-md-4 text-right" [style.display]="nextDisplay">
+            <a [routerLink]="nextHref" class="btn btn-default">Next week</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <app-reportslist></app-reportslist>
+      </div>
+    </div>
+  </div>
+</div>

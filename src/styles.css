@@ -37,6 +37,9 @@ footer .inner-footer {
   background-image: url("assets/images/newspaper.jpg");
 }
 
+.white-banner {
+  height: 50px;
+}
 
 .fixedimage.fixedimage--asimo {
   background-image: url('assets/images/asimo.jpg'); 

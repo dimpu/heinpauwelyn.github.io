@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
+import { MarkdownModule } from 'angular2-markdown';
 
 import { AppComponent } from './app.component';
 import { StageComponent } from './stage/stage.component';
@@ -12,6 +13,8 @@ import { OverComponent } from './over/over.component';
 import { CvComponent } from './cv/cv.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BlogComponent } from './blog/blog.component';
+import { ReportComponent } from './report/report.component';
+import { ReportslistComponent } from './reportslist/reportslist.component';
 
 @NgModule({
     declarations: [
@@ -22,15 +25,19 @@ import { BlogComponent } from './blog/blog.component';
         OverComponent,
         CvComponent,
         PortfolioComponent,
-        BlogComponent
+        BlogComponent,
+        ReportComponent,
+        ReportslistComponent
     ],
     imports: [
+        MarkdownModule,
         BrowserModule,
         FormsModule,
         HttpModule,
         RouterModule.forRoot([
             { path: 'home', component: HomeComponent },
             { path: 'stage', component: StageComponent },
+            { path: 'stage/:id', component: ReportComponent },
             { path: 'over', component: OverComponent },
             { path: 'cv', component: CvComponent },
             { path: 'portfolio', component: PortfolioComponent },
