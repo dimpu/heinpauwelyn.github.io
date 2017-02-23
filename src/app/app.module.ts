@@ -30,7 +30,7 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
         ReportslistComponent
     ],
     imports: [
-        MarkdownModule,
+        MarkdownModule.getRoot(),
         BrowserModule,
         FormsModule,
         HttpModule,
