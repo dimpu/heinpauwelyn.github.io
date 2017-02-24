@@ -17,6 +17,18 @@ import { ReportComponent } from './report/report.component';
 import { ReportslistComponent } from './reportslist/reportslist.component';
 
 @NgModule({
+    declarations: [
+        AppComponent,
+        StageComponent,
+        NavComponent,
+        HomeComponent,
+        OverComponent,
+        CvComponent,
+        PortfolioComponent,
+        BlogComponent,
+        ReportComponent,
+        ReportslistComponent
+    ],
     imports: [
         BrowserModule,
         FormsModule,
@@ -32,18 +44,6 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
             { path: '**', redirectTo: 'home' },
         ]),
         MarkdownModule
-    ],
-    declarations: [
-        AppComponent,
-        StageComponent,
-        NavComponent,
-        HomeComponent,
-        OverComponent,
-        CvComponent,
-        PortfolioComponent,
-        BlogComponent,
-        ReportComponent,
-        ReportslistComponent
     ],
     providers: [],
     bootstrap: [AppComponent]
