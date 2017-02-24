@@ -21,6 +21,7 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
         BrowserModule,
         FormsModule,
         HttpModule,
+        MarkdownModule.forRoot(),
         RouterModule.forRoot([
             { path: 'home', component: HomeComponent },
             { path: 'stage', component: StageComponent },
@@ -30,8 +31,8 @@ import { ReportslistComponent } from './reportslist/reportslist.component';
             { path: 'portfolio', component: PortfolioComponent },
             { path: 'blog', component: BlogComponent },
             { path: '**', redirectTo: 'home' },
-        ]),
-        MarkdownModule
+        ])
+        
     ],
     declarations: [
         AppComponent,
